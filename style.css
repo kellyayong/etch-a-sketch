@@ -1,0 +1,33 @@
+h1 {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  top: 20px;
+}
+
+div#container {
+  width: 800px;
+  height: 600px;
+  background-color: rgb(214, 108, 108);
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+  border: solid 2px black;
+}
+
+div#box {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(250, 192, 171);
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+  border: solid 2px black;
+}
+
+div.grid {
+  background-color: white;
+  border: solid 1px gray;
+  width: 99%;
+  height: 99%;
+}
