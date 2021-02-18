@@ -7,4 +7,8 @@ function createGrid() {
     box.appendChild(grid);
 };
 
-createGrid();
+// create 16x16 grids
+let totalGrid = 256;
+for (let i = 0; i<totalGrid; i++) {
+    createGrid();
+};

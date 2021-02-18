@@ -22,12 +22,27 @@ div#box {
   position: relative;
   margin: 0 auto;
   top: 50px;
-  border: solid 2px black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid 2px blue;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
 }
 
 div.grid {
   background-color: white;
-  border: solid 1px gray;
-  width: 99%;
-  height: 99%;
+  border: 1px solid lime;
+  width: 31px;
+  height: 31px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-display: flex;
+  -moz-display: flex;
+  display: flex;
+  flex: 0 1 auto;
 }
