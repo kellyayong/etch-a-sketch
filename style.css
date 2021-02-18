@@ -46,3 +46,11 @@ div.grid {
   display: flex;
   flex: 0 1 auto;
 }
+
+div.blackBackground {
+  background-color: grey;
+}
+
+div.randomBackground {
+  background-color: red;
+}

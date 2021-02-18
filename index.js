@@ -13,7 +13,7 @@ for (let i = 0; i<totalGrid; i++) {
     createGrid();
 };
 
-// events
+// add event listener for all grids
 const grids = document.getElementsByClassName('grid');
 for(let i=0; i < grids.length; i++) {
     Array.from(grids);
@@ -21,5 +21,19 @@ for(let i=0; i < grids.length; i++) {
 }
 
 function changeColor(e) {
-    e.target.style.backgroundColor = 'black';
+    console.log(e.target);
+    e.target.style.removeProperty('background-color');
+    e.target.classList.add('blackBackground');
+};
+
+// clear button
+const clearBtn = document.getElementById('clear');
+clearBtn.addEventListener('click', clearBackground);
+
+function clearBackground() {
+    const grids = document.getElementsByClassName('grid');
+    for(let i=0; i < grids.length; i++) {
+        Array.from(grids);
+        grids[i].style.backgroundColor = 'white';
+    };   
 };
