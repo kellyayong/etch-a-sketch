@@ -48,7 +48,15 @@ div.grid {
 }
 
 div.blackBackground {
-  background-color: grey;
+  background-color: black;
+}
+
+div.grayBackground {
+  background-color: gray;
+}
+
+div.whiteBackground {
+  background-color: white !important;
 }
 
 div.randomBackground {
