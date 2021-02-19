@@ -6,26 +6,27 @@ h1 {
 }
 
 div#container {
-  width: 800px;
-  height: 600px;
-  background-color: rgb(214, 108, 108);
+  width: 1200px;
+  height: 650px;
+  background-color: rgb(221, 182, 182);
   position: relative;
   margin: 0 auto;
-  top: 50px;
+  top: 30px;
   border: solid 2px black;
 }
 
 div#box {
-  width: 500px;
-  height: 500px;
+  width: 604px;
+  height: 604px;
   background-color: rgb(250, 192, 171);
   position: relative;
   margin: 0 auto;
-  top: 50px;
+  margin-right: 50px;
+  top: -10px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: solid 2px blue;
+  border: solid 2px rgba(108, 226, 255, 0.644);
   -webkit-display: flex;
   -moz-display: flex;
   display: flex;
@@ -35,7 +36,7 @@ div#box {
 
 div.grid {
   background-color: white;
-  border: 1px solid lime;
+  border: 0.25px solid rgba(187, 250, 187, 0.829);
   width: 31px;
   height: 31px;
   -webkit-box-sizing: border-box;
@@ -50,15 +51,69 @@ div.grid {
 div.blackBackground {
   background-color: black;
 }
-
 div.grayBackground {
   background-color: gray;
 }
-
 div.whiteBackground {
   background-color: white !important;
 }
 
-div.randomBackground {
-  background-color: red;
+.slidecontainer {
+  width: 250px;
+  position: relative;
+  padding: 40px 20px;
+  margin: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  border: 1px solid rgb(194, 194, 229);
+  background-color: rgba(255, 210, 210, 0.315);
+  text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  float: left;
+  display: block;
+  position: relative;
+
+  background: #bce6f3;
+  outline: none;
+  border-radius: 5px;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #72ceba;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #72ceba;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.outputP {
+  display: block;
 }

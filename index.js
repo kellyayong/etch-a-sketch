@@ -1,17 +1,49 @@
 
 // create div as grids
-function createGrid() {
+function createGrid(value) {
     const box = document.getElementById('box');
     const grid = document.createElement('div');
     grid.setAttribute('class', 'grid');
+    const width = 600;
+    const gridWidth = width/value;
+    grid.style.width = gridWidth+'px';
+    grid.style.height = gridWidth+'px';
     box.appendChild(grid);
 };
 
-// create 16x16 grids
-let totalGrid = 256;
+// default - create 30x30 grids
+let gridSize = 30;
+let totalGrid = gridSize*gridSize;
 for (let i = 0; i<totalGrid; i++) {
-    createGrid();
+    createGrid(gridSize);
 };
+
+// function to fill grid box based on gridSize?
+function fillGridBox() {
+    deleteGrids();
+    let totalGrid = gridSize*gridSize;
+    for (let i = 0; i<totalGrid; i++) {
+        createGrid(gridSize);
+    };
+}
+
+// function to delete grid
+function deleteGrids() {
+    const grids = document.querySelectorAll('.grid');
+    grids.forEach(e => e.remove());
+}
+
+// slider 
+const slider = document.getElementById('gridRange');
+const output = document.getElementById('output');
+output.innerHTML = slider.value + 'x' +  slider.value;
+slider.oninput = function() {
+    output.innerHTML = this.value + 'x' +  this.value;
+    gridSize = this.value;
+    fillGridBox();
+    drawOnGrids();
+};
+
 
 // clear button
 const clearBtn = document.getElementById('clear');
@@ -30,7 +62,15 @@ function clearBackground() {
 // default selection - black
 let selection = 'blackBG';
 
-// add event listener for all grids
+// function to add event listener for all grids
+function drawOnGrids() {
+    const grids = document.getElementsByClassName('grid');
+    for(let i=0; i < grids.length; i++) {
+        Array.from(grids);
+        grids[i].addEventListener('mouseover', checkClass);
+    };
+}
+
 const grids = document.getElementsByClassName('grid');
 for(let i=0; i < grids.length; i++) {
     Array.from(grids);
@@ -71,17 +111,14 @@ randomBtn.addEventListener('click', changeToRandom);
 
 // function to change selection according to btn
 function changeToBlack() {
-    clearBackground();
     selection = 'blackBG';
     return selection;
 };
 function changeToGray() {
-    clearBackground();
     selection = 'grayBG';
     return selection;
 };
 function changeToRandom() {
-    clearBackground();
     selection = 'randomBG';
     return selection;
 };
