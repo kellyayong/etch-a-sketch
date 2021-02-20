@@ -1,8 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
 h1 {
   position: relative;
   text-align: center;
   margin: 0 auto;
   top: 20px;
+  color: white;
+  background-color: ;
+  font-size: 50px;
+  -webkit-text-stroke: 2px rgb(53, 72, 240);
+  font-family: "Bangers", cursive, "DotGothic16", sans-serif;
+  text-shadow: 3px 3px 1px #1cffc698, -3px -3px 1px #ff898fbb;
 }
 
 div#container {
@@ -12,7 +21,7 @@ div#container {
   position: relative;
   margin: 0 auto;
   top: 30px;
-  border: solid 2px black;
+  border: solid 2px rgba(168, 158, 255, 0.911);
 }
 
 div#box {
