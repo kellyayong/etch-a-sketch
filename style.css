@@ -27,7 +27,7 @@ div#container {
   position: relative;
   margin: 0 auto;
   top: 30px;
-  border: solid 2px rgba(168, 158, 255, 0.911);
+  border: solid 2px rgba(175, 245, 233, 0.842);
 }
 
 div#box {
@@ -82,9 +82,9 @@ div.container-btn {
 button.buttonStyle {
   -webkit-appearance: none;
   appearance: none;
-  background-color: rgba(163, 145, 226, 0.952);
+  background-color: rgba(176, 163, 224, 0.952);
   border-radius: 50px;
-  border: 1px solid rgba(98, 72, 189, 0.541);
+  border: 1px solid rgb(197, 198, 243);
   width: 80px;
   height: 80px;
   margin: 20px;
