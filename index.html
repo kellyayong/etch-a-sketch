@@ -6,19 +6,18 @@
         Etch-A-Sketch
     </title>
     <link rel='stylesheet' href='style.css'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
 </head>
 <body>
 <h1>Etch-A-Sketch</h1>
 
 <div id='container'>
-    <div class='container-btn'>
-        <button class='btn' id='clear'>Clear</button>
-        <button class='btn' id='black'>Black</button>
-        <button class='btn' id='random'>Random</button>
-        <button class='btn' id='gray'>Gray</button>
-    </div>
-    <div class='slidecontainer'>
+
+    <div class='slide-btn-container'>
+        <button class='btn buttonStyle' id='clear'>Clear</button>
+        <button class='btn buttonStyle' id='black'>Black</button>
+        <button class='btn buttonStyle' id='random'>Random</button>
+        <button class='btn buttonStyle' id='gray'>Gray</button>
         <input type='range' min='16' max='64' value='30' class='slider' id='gridRange'>
         <br>
         <p class='outputP'>Grid Size: <span id='output'></span></p>

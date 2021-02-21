@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+body {
+  font-family: "Bebas Neue", cursive, sans-serif;
+  color: white;
+}
 
 h1 {
   position: relative;
@@ -9,7 +15,7 @@ h1 {
   color: white;
   background-color: ;
   font-size: 50px;
-  -webkit-text-stroke: 2px rgb(53, 72, 240);
+  -webkit-text-stroke: 1.5px rgb(53, 72, 240);
   font-family: "Bangers", cursive, "DotGothic16", sans-serif;
   text-shadow: 3px 3px 1px #1cffc698, -3px -3px 1px #ff898fbb;
 }
@@ -30,8 +36,8 @@ div#box {
   background-color: rgb(250, 192, 171);
   position: relative;
   margin: 0 auto;
-  margin-right: 50px;
-  top: -10px;
+  margin-right: 80px;
+  top: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -67,18 +73,40 @@ div.whiteBackground {
   background-color: white !important;
 }
 
-.slidecontainer {
+div.container-btn {
   width: 250px;
+  float: left;
+  margin: 50px;
+}
+
+button.buttonStyle {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(163, 145, 226, 0.952);
+  border-radius: 50px;
+  border: 1px solid rgba(98, 72, 189, 0.541);
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  font-family: "DotGothic16", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-shadow: 3px 3px 1px #1cffc698, -3px -3px 1px #ff898fbb;
+}
+
+.slide-btn-container {
+  width: 300px;
+  height: 500px;
   position: relative;
   padding: 40px 20px;
-  margin: 20px;
+  margin: 70px 0 40px 50px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   float: left;
   border: 1px solid rgb(194, 194, 229);
-  background-color: rgba(255, 210, 210, 0.315);
+  background-color: rgba(221, 255, 255, 0.651);
   text-align: center;
 }
 
@@ -90,17 +118,18 @@ div.whiteBackground {
   float: left;
   display: block;
   position: relative;
-
-  background: #bce6f3;
+  margin: 50px 0 40px 0;
+  background: #90c9eb;
   outline: none;
   border-radius: 5px;
+  border: 1px solid rgba(216, 215, 235, 0.836);
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
 
 .slider:hover {
-  opacity: 1;
+  opacity: 1.2;
 }
 
 .slider::-webkit-slider-thumb {
@@ -110,6 +139,7 @@ div.whiteBackground {
   height: 20px;
   background: #72ceba;
   border-radius: 50%;
+  border: 1px solid rgb(226, 245, 245);
   cursor: pointer;
 }
 
@@ -118,11 +148,15 @@ div.whiteBackground {
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #72ceba;
+  background: rgb(226, 245, 245);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .outputP {
   display: block;
+  font-family: "DotGothic16", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 1px #1cffc698, -2px -2px 1px #ff898fbb;
 }
