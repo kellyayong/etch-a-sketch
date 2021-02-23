@@ -5,6 +5,7 @@
 body {
   font-family: "Bebas Neue", cursive, sans-serif;
   color: white;
+  background-color: rgba(253, 169, 169, 0.911);
 }
 
 h1 {
@@ -13,7 +14,6 @@ h1 {
   margin: 0 auto;
   top: 20px;
   color: white;
-  background-color: ;
   font-size: 50px;
   -webkit-text-stroke: 1.5px rgb(53, 72, 240);
   font-family: "Bangers", cursive, "DotGothic16", sans-serif;
@@ -23,7 +23,7 @@ h1 {
 div#container {
   width: 1200px;
   height: 650px;
-  background-color: rgb(221, 182, 182);
+  background-color: rgb(230, 198, 198);
   position: relative;
   margin: 0 auto;
   top: 30px;
@@ -33,7 +33,7 @@ div#container {
 div#box {
   width: 604px;
   height: 604px;
-  background-color: rgb(250, 192, 171);
+  background-color: rgb(255, 254, 254);
   position: relative;
   margin: 0 auto;
   margin-right: 80px;
@@ -50,7 +50,7 @@ div#box {
 }
 
 div.grid {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border: 0.25px solid rgba(187, 250, 187, 0.829);
   width: 31px;
   height: 31px;
@@ -67,7 +67,7 @@ div.blackBackground {
   background-color: black;
 }
 div.grayBackground {
-  background-color: gray;
+  background-color: rgb(3, 3, 3, 0.1);
 }
 div.whiteBackground {
   background-color: white !important;

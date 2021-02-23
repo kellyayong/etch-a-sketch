@@ -80,17 +80,18 @@ for(let i=0; i < grids.length; i++) {
 // function to check the color selection 
 function checkClass(e) {
     if (selection == 'blackBG') {
-        //clearBackground();
         e.target.classList.remove('whiteBackground');
         e.target.classList.remove('grayBackground');
         e.target.classList.add('blackBackground');
     } else if (selection == 'grayBG') {
-        //clearBackground();
         e.target.classList.remove('whiteBackground');
         e.target.classList.remove('blackBackground');
-        e.target.classList.add('grayBackground');
+        if(e.target.style.backgroundColor) {
+            e.target.addEventListener('mouseover', addShade);
+        } else {
+            e.target.style.backgroundColor= `rgba(3, 3, 3, 0.1)`;
+        };
     } else if (selection == 'randomBG') {
-        //clearBackground();
         e.target.classList.remove('whiteBackground');
         e.target.classList.remove('blackBackground');
         e.target.classList.remove('grayBackground');
@@ -127,4 +128,12 @@ function changeToRandom() {
 function randomBG(e) {
     const randomColor = Math.floor(Math.random()*16777215).toString(16);
     e.target.backgroundColor = '#' + randomColor;
+};
+
+function addShade(e) {
+ let currentColor = e.target.style.backgroundColor;
+ const opacity = currentColor.slice(13,-1);
+ currentColor = parseFloat(opacity)+ 0.1;
+ let newColor = 'rgba(0,0,0,'+currentColor+')';
+ e.target.style.backgroundColor = newColor;
 };
